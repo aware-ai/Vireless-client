@@ -24,7 +24,7 @@ const RESOURCES = {
 "assets/NOTICES": "2cd8d69198749ec4adbe026f63737396",
 "assets/assets/Vireless.jpg": "b7fd46259ba8d1d5ed7984856fa4146a",
 "assets/AssetManifest.json": "3be73c62880b06d0404796e7832b23cf",
-"main.dart.js": "fe7197992fea7c6bcd10df2ce966411d",
+"main.dart.js": "76808f2469bc404a6382d16bd848d2f8",
 "jspdf.js": "5f40d5087ba9e207d803854072f1e8dc"
 };
 
