@@ -22,9 +22,10 @@ const RESOURCES = {
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "assets/NOTICES": "2cd8d69198749ec4adbe026f63737396",
+"assets/assets/favicon-96.jpg": "1b665253a36d742dba46b16417dc160b",
 "assets/assets/Vireless.jpg": "b7fd46259ba8d1d5ed7984856fa4146a",
-"assets/AssetManifest.json": "3be73c62880b06d0404796e7832b23cf",
-"main.dart.js": "76808f2469bc404a6382d16bd848d2f8",
+"assets/AssetManifest.json": "fd332e66c9638111039b1bb5d228dbe0",
+"main.dart.js": "e70a51fa6daa3d0c01710a60b757b3ef",
 "jspdf.js": "5f40d5087ba9e207d803854072f1e8dc"
 };
 
