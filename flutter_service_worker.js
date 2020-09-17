@@ -25,7 +25,7 @@ const RESOURCES = {
 "assets/assets/favicon-96.jpg": "1b665253a36d742dba46b16417dc160b",
 "assets/assets/Vireless.jpg": "b7fd46259ba8d1d5ed7984856fa4146a",
 "assets/AssetManifest.json": "fd332e66c9638111039b1bb5d228dbe0",
-"main.dart.js": "e70a51fa6daa3d0c01710a60b757b3ef",
+"main.dart.js": "bea37f0833978602b8a3d3699d7c49e8",
 "jspdf.js": "5f40d5087ba9e207d803854072f1e8dc"
 };
 
