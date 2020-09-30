@@ -5,8 +5,8 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "qrapi.php": "1c8f2efe765fae92e082f1a362d7d98b",
 "qrcode.js": "1f62bc3e64a5876ab09813af24ff5082",
-"index.html": "36716e81dfa1c0b3f943413c9fc5e076",
-"/": "36716e81dfa1c0b3f943413c9fc5e076",
+"index.html": "3a9f9cecaea52fa1852b297bd0d50feb",
+"/": "3a9f9cecaea52fa1852b297bd0d50feb",
 "favicon.png": "1fb36fe5650865cd456b45123576f3c3",
 "icons/favicon-128.png": "622f6905e559e74fc4b40225d37d19c6",
 "icons/favicon-96.png": "c744b62595422dcae86424607d20bde8",
@@ -19,7 +19,6 @@ const RESOURCES = {
 "manifest.json": "4240faebf171ed627ec14a51d7fbb410",
 "FileSaver.min.js": "8c53be19a78dc1724660151c97767921",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
 "assets/packages/openpgp/web/assets/wasm_exec.js": "6905e2aa5b3a4354f323700c5899b8a9",
 "assets/packages/openpgp/web/assets/openpgp.wasm": "50f49a928292dac79a0c420d500f7e30",
@@ -29,7 +28,7 @@ const RESOURCES = {
 "assets/assets/google-play-badge.png": "235818b9a5bf7810fc4cc1b20c81338a",
 "assets/assets/Vireless.jpg": "b7fd46259ba8d1d5ed7984856fa4146a",
 "assets/AssetManifest.json": "dec4165caf133f4a38221f612d51ffa7",
-"main.dart.js": "97b97473f6095a2399dd77eaf85cd3f8",
+"main.dart.js": "9648aca9f5a41e370895d16d2c5256a8",
 "jspdf.js": "5f40d5087ba9e207d803854072f1e8dc"
 };
 
