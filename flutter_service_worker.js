@@ -5,8 +5,8 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "qrapi.php": "1c8f2efe765fae92e082f1a362d7d98b",
 "qrcode.js": "1f62bc3e64a5876ab09813af24ff5082",
-"index.html": "bfd14144ef4be846bdd7a3878135814e",
-"/": "bfd14144ef4be846bdd7a3878135814e",
+"index.html": "0a4a6050ee90bbdc8f45027db543d433",
+"/": "0a4a6050ee90bbdc8f45027db543d433",
 "favicon.png": "1fb36fe5650865cd456b45123576f3c3",
 "icons/favicon-128.png": "622f6905e559e74fc4b40225d37d19c6",
 "icons/favicon-96.png": "c744b62595422dcae86424607d20bde8",
@@ -25,10 +25,10 @@ const RESOURCES = {
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "assets/NOTICES": "b04ef760f8996b05774c65d6deef3d74",
 "assets/assets/favicon-96.jpg": "1b665253a36d742dba46b16417dc160b",
-"assets/assets/google-play-badge.png": "235818b9a5bf7810fc4cc1b20c81338a",
+"assets/assets/google-play-badge.png": "db9b21a1c41f3dcd9731e1e7acfdbb57",
 "assets/assets/Vireless.jpg": "b7fd46259ba8d1d5ed7984856fa4146a",
 "assets/AssetManifest.json": "dec4165caf133f4a38221f612d51ffa7",
-"main.dart.js": "a83c57f6d7afeae03a7b85b9876c7b86",
+"main.dart.js": "cd2f4485fc6cf1e258713b359208f982",
 "jspdf.js": "5f40d5087ba9e207d803854072f1e8dc"
 };
 
