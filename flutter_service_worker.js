@@ -5,8 +5,8 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "qrapi.php": "1c8f2efe765fae92e082f1a362d7d98b",
 "qrcode.js": "1f62bc3e64a5876ab09813af24ff5082",
-"index.html": "890d0799f489a4f7583bc0b7dc65c738",
-"/": "890d0799f489a4f7583bc0b7dc65c738",
+"index.html": "8e94e59090b64354594b79c004e44ba1",
+"/": "8e94e59090b64354594b79c004e44ba1",
 "favicon.png": "1fb36fe5650865cd456b45123576f3c3",
 "icons/favicon-128.png": "622f6905e559e74fc4b40225d37d19c6",
 "icons/favicon-96.png": "c744b62595422dcae86424607d20bde8",
@@ -25,13 +25,13 @@ const RESOURCES = {
 "assets/packages/openpgp/web/assets/wasm_exec.js": "6905e2aa5b3a4354f323700c5899b8a9",
 "assets/packages/openpgp/web/assets/openpgp.wasm": "50f49a928292dac79a0c420d500f7e30",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
-"assets/NOTICES": "84433890cdc9d71c7ac43ad7831a2012",
+"assets/NOTICES": "06c0046c2c155aaa81e0c8c7b000b88a",
 "assets/assets/favicon-96.jpg": "1b665253a36d742dba46b16417dc160b",
 "assets/assets/google-play-badge.png": "db9b21a1c41f3dcd9731e1e7acfdbb57",
 "assets/assets/appstore.jpg": "e4237a6f3886c4f203c25c227c8befdc",
 "assets/assets/Vireless.jpg": "b7fd46259ba8d1d5ed7984856fa4146a",
 "assets/AssetManifest.json": "cc087654df6bbc4f39b63cba0acdefdb",
-"main.dart.js": "7769e75ec15da1f397e4a15f5b5c7b95",
+"main.dart.js": "4444ace121a2f9f5f9326308be4d9e8b",
 "jspdf.js": "5f40d5087ba9e207d803854072f1e8dc"
 };
 
