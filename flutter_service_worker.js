@@ -5,8 +5,8 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "qrapi.php": "1c8f2efe765fae92e082f1a362d7d98b",
 "qrcode.js": "1f62bc3e64a5876ab09813af24ff5082",
-"index.html": "8e94e59090b64354594b79c004e44ba1",
-"/": "8e94e59090b64354594b79c004e44ba1",
+"index.html": "ca8f457cd00b0f349af0186e67d19602",
+"/": "ca8f457cd00b0f349af0186e67d19602",
 "favicon.png": "1fb36fe5650865cd456b45123576f3c3",
 "icons/favicon-128.png": "622f6905e559e74fc4b40225d37d19c6",
 "icons/favicon-96.png": "c744b62595422dcae86424607d20bde8",
@@ -18,6 +18,7 @@ const RESOURCES = {
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/favicon-72.png": "31c1c55e9a274c245af6f5f66a02c42e",
 "icons/favicon-384.png": "0768769ac960c6f446fcbecef18bfe22",
+"version.json": "f4f5cef955a43e81a290c72ed3109e59",
 "manifest.json": "4240faebf171ed627ec14a51d7fbb410",
 "FileSaver.min.js": "8c53be19a78dc1724660151c97767921",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
@@ -25,13 +26,13 @@ const RESOURCES = {
 "assets/packages/openpgp/web/assets/wasm_exec.js": "6905e2aa5b3a4354f323700c5899b8a9",
 "assets/packages/openpgp/web/assets/openpgp.wasm": "50f49a928292dac79a0c420d500f7e30",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
-"assets/NOTICES": "06c0046c2c155aaa81e0c8c7b000b88a",
+"assets/NOTICES": "04437cee7a9c4402dc71ed75fe7f30f6",
 "assets/assets/favicon-96.jpg": "1b665253a36d742dba46b16417dc160b",
 "assets/assets/google-play-badge.png": "db9b21a1c41f3dcd9731e1e7acfdbb57",
 "assets/assets/appstore.jpg": "e4237a6f3886c4f203c25c227c8befdc",
 "assets/assets/Vireless.jpg": "b7fd46259ba8d1d5ed7984856fa4146a",
 "assets/AssetManifest.json": "cc087654df6bbc4f39b63cba0acdefdb",
-"main.dart.js": "4444ace121a2f9f5f9326308be4d9e8b",
+"main.dart.js": "a1d2c0872c37a7d46d0659a09066bea9",
 "jspdf.js": "5f40d5087ba9e207d803854072f1e8dc"
 };
 
@@ -46,6 +47,7 @@ const CORE = [
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
+  self.skipWaiting();
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
@@ -114,6 +116,9 @@ self.addEventListener("activate", function(event) {
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
+  if (event.request.method !== 'GET') {
+    return;
+  }
   var origin = self.location.origin;
   var key = event.request.url.substring(origin.length + 1);
   // Redirect URLs to the index.html
@@ -123,9 +128,10 @@ self.addEventListener("fetch", (event) => {
   if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
     key = '/';
   }
-  // If the URL is not the RESOURCE list, skip the cache.
+  // If the URL is not the RESOURCE list then return to signal that the
+  // browser should take over.
   if (!RESOURCES[key]) {
-    return event.respondWith(fetch(event.request));
+    return;
   }
   // If the URL is the index.html, perform an online-first request.
   if (key == '/') {
@@ -149,10 +155,12 @@ self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
   if (event.data === 'skipWaiting') {
-    return self.skipWaiting();
+    self.skipWaiting();
+    return;
   }
-  if (event.message === 'downloadOffline') {
+  if (event.data === 'downloadOffline') {
     downloadOffline();
+    return;
   }
 });
 
