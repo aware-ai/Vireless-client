@@ -5,8 +5,8 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "qrapi.php": "1c8f2efe765fae92e082f1a362d7d98b",
 "qrcode.js": "1f62bc3e64a5876ab09813af24ff5082",
-"index.html": "ca8f457cd00b0f349af0186e67d19602",
-"/": "ca8f457cd00b0f349af0186e67d19602",
+"index.html": "3f317ad1ff40d6e46a6b0b544a8c16ae",
+"/": "3f317ad1ff40d6e46a6b0b544a8c16ae",
 "favicon.png": "1fb36fe5650865cd456b45123576f3c3",
 "icons/favicon-128.png": "622f6905e559e74fc4b40225d37d19c6",
 "icons/favicon-96.png": "c744b62595422dcae86424607d20bde8",
@@ -18,7 +18,7 @@ const RESOURCES = {
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/favicon-72.png": "31c1c55e9a274c245af6f5f66a02c42e",
 "icons/favicon-384.png": "0768769ac960c6f446fcbecef18bfe22",
-"version.json": "f4f5cef955a43e81a290c72ed3109e59",
+"version.json": "0912dc14610d61150b322a0cf72698db",
 "manifest.json": "4240faebf171ed627ec14a51d7fbb410",
 "FileSaver.min.js": "8c53be19a78dc1724660151c97767921",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
@@ -32,7 +32,7 @@ const RESOURCES = {
 "assets/assets/appstore.jpg": "e4237a6f3886c4f203c25c227c8befdc",
 "assets/assets/Vireless.jpg": "b7fd46259ba8d1d5ed7984856fa4146a",
 "assets/AssetManifest.json": "cc087654df6bbc4f39b63cba0acdefdb",
-"main.dart.js": "a1d2c0872c37a7d46d0659a09066bea9",
+"main.dart.js": "284f5c060921286ecd2355a069831706",
 "jspdf.js": "5f40d5087ba9e207d803854072f1e8dc"
 };
 
